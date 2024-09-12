@@ -1,0 +1,68 @@
+body{
+    background-color: #F6EBE4;
+    background-size: 100%;
+}
+header{
+	background-color: #E2BBC4;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.logo{
+    width: 100px;
+    height: 50px;
+}
+.nav-link{
+    color: black;
+}
+.nome{
+    flex-wrap: wrap;
+    width: 80px;
+    color: black;
+}
+.container{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.condicoes{
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 45%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.justificativa{
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    max-width: 50%;
+    background-color: #F0DFDE;
+    padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+}
+.iniciativas{
+	background-color: #F0DFDE;
+	display: flex;
+	flex-wrap: wrap;
+}
+.inct1{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px;
+}
+.imgInct{
+	width: 30%;
+	margin: 10px
+}
+.textInct{
+	width: 65%;
+}
+footer{
+	padding-left: 20px;
+	padding-right: 20px;
+}

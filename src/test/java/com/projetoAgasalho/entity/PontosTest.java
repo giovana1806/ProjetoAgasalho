@@ -13,7 +13,7 @@ class PontosTest {
 	@BeforeEach
 	void setUp() {
 		//Arrange
-		ponto = new Ponto(1L, "Escola Alegria", "Moletom");
+		ponto = new Ponto(1L, "Escola Alegria");
 	}
 
 	@Test
@@ -35,24 +35,14 @@ class PontosTest {
 	}
 	
 	@Test
-	@DisplayName("Testando o getter e setter do itemFalta")
-	void testEmail() {
+	@DisplayName("Testando o construtor com dois argumentos")
+	void testConstrutor() {
 		//Act
-		ponto.setArtigosFalta("cobertor");
-		//Assert
-		assertEquals("cobertor", ponto.getArtigosFalta());
-	}
-	
-	@Test
-	@DisplayName("Testando o construtor com todos os argumentos")
-	void testConstrutorAll() {
-		//Act
-		Ponto novoPonto = new Ponto(3L, "Hospital Cure", "Calça");
+		Ponto novoPonto = new Ponto(3L, "Hospital Cure");
 		//Assert
 		assertAll("novoPonto",
 				()-> assertEquals(3L, novoPonto.getId()),
-				()-> assertEquals("Hospital Cure", novoPonto.getPontoColeta()),
-				()-> assertEquals("Calça", novoPonto.getArtigosFalta()));
+				()-> assertEquals("Hospital Cure", novoPonto.getPontoColeta()));
 	}
 	
 
